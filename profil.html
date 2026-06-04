@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - NPF</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="profile-page">
+
+<header class="topbar">
+  <a href="index.html" class="logo">
+    <img src="images/LoggaNPF.png" alt="NPF logotyp">
+  </a>
+
+  <nav class="desktop-nav" aria-label="Huvudmeny">
+    <a href="index.html">Hem</a>
+    <a href="forum.html">Forum</a>
+    <a href="grupper.html">Grupper</a>
+    <a href="tips.html">Tips</a>
+  </nav>
+
+  <form class="header-search" action="forum.html">
+    <label class="sr-only" for="site-search-profile">Sök</label>
+    <input type="search" id="site-search-profile" name="q" placeholder="Sök grupper, tips, forum...">
+  </form>
+
+  <details class="mobile-menu">
+    <summary aria-label="Öppna meny"><span></span><span></span><span></span></summary>
+    <nav aria-label="Mobilmeny">
+      <a href="index.html">Hem</a>
+      <a href="forum.html">Forum</a>
+      <a href="grupper.html">Grupper</a>
+      <a href="tips.html">Tips</a>
+      <a href="skapa-inlagg.html">Skapa inlägg</a>
+      <a href="profil.html">Profil</a>
+    </nav>
+  </details>
+
+  <nav class="nav-actions" aria-label="Snabbval">
+    <a href="skapa-inlagg.html" class="create-action">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+      Skapa
+    </a>
+    <details class="mobile-search-popover">
+      <summary class="icon-action" aria-label="Sök">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="6.5"></circle>
+        <path d="m16 16 4.2 4.2"></path>
+      </svg>
+      </summary>
+      <form class="mobile-search-dialog" action="forum.html">
+        <label class="sr-only" for="quick-search">Sök</label>
+        <input type="search" id="quick-search" name="q" placeholder="Sök grupper, tips, forum...">
+        <button type="submit" class="button primary">Sök</button>
+      </form>
+    </details>
+    <a href="profil.html" class="avatar-action active" aria-label="Profil">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-2a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v2"></path></svg>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-heading">
+    <h1>Profil</h1>
+    <p>Hantera din profil, dina intressen och grupperna du är med i.</p>
+  </section>
+
+  <section class="profile-card">
+    <button class="edit-button" aria-label="Redigera profil">Redigera</button>
+
+    <img src="images/Lina.jpg" alt="Profilbild på Lina Svensson" class="profile-large">
+
+    <h2>Lina Svensson</h2>
+    <p>Göteborg</p>
+    <p>Mamma till Elsa, 6 månader</p>
+    <p class="profile-bio">
+      Vill hitta lugna promenader, barnvagnsvänliga caféer och andra föräldrar som också uppskattar ärliga samtal om vardagen.
+    </p>
+
+    <dl class="profile-stats">
+      <div>
+        <dt>3</dt>
+        <dd>grupper</dd>
+      </div>
+      <div>
+        <dt>8</dt>
+        <dd>inlägg</dd>
+      </div>
+      <div>
+        <dt>5</dt>
+        <dd>träffar</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="interests">
+    <h2>Intressen</h2>
+
+    <div class="interest-list">
+      <span>Promenader</span>
+      <span>Fika</span>
+      <span>Nyfödd</span>
+      <span>Föräldragrupp</span>
+      <span>Sömn</span>
+      <span>Tips</span>
+      <span>Träffar</span>
+      <span>Vardag</span>
+    </div>
+  </section>
+
+  <section class="saved-groups">
+    <div class="section-header compact-header">
+      <div>
+        <span class="eyebrow">Medlem i</span>
+        <h2>Mina grupper</h2>
+      </div>
+      <a href="grupper.html">Hitta fler grupper</a>
+    </div>
+
+    <article class="small-card joined-group-card">
+      <span class="group-status">Aktiv idag</span>
+      <h3>Promenadgänget</h3>
+      <p>Föräldrar som vill ses för barnvagnspromenader.</p>
+      <a href="grupp-promenad.html" class="button secondary">Öppna gruppen</a>
+    </article>
+
+    <article class="small-card joined-group-card">
+      <span class="group-status">Nästa träff 10 juni</span>
+      <h3>Föräldrafika</h3>
+      <p>Träffar på café för nya föräldrar i närområdet.</p>
+      <a href="grupp-foraldrafika.html" class="button secondary">Öppna gruppen</a>
+    </article>
+
+    <article class="small-card joined-group-card">
+      <span class="group-status">Ny grupp</span>
+      <h3>Ny i stan</h3>
+      <p>För dig som vill hitta nya personer nära där du bor.</p>
+      <a href="grupp-ny-i-stan.html" class="button secondary">Öppna gruppen</a>
+    </article>
+  </section>
+
+  <section class="latest-post">
+    <h2>Senaste inlägg</h2>
+
+    <article class="post-card">
+      <div class="post-content">
+        <h3>Tips på bra barnvagn?</h3>
+        <p>Jag letar efter en smidig barnvagn som fungerar både i stan och på promenader.</p>
+
+        <div class="post-meta">
+          <span>8 svar</span>
+          <span>14 gillningar</span>
+          <span>1 dag sedan</span>
+        </div>
+
+        <div class="post-actions">
+          <button type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 11v10H4a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h3Z"></path><path d="M7 11 11 3a3 3 0 0 1 3 3v3h4.3a2 2 0 0 1 2 2.4l-1.3 7A3 3 0 0 1 16.1 21H7V11Z"></path></svg>Gilla</button>
+          <a href="skapa-inlagg.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"></path></svg>Kommentera</a>
+          <button type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"></path><path d="M16 6 12 2 8 6"></path><path d="M12 2v13"></path></svg>Dela</button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <img src="images/LoggaNPF.png" alt="NPF logotyp">
+      <h2>NPF</h2>
+      <p>En trygg mötesplats för blivande och nyblivna föräldrar.</p>
+    </div>
+
+    <nav class="footer-column" aria-label="Utforska">
+      <h3>Utforska</h3>
+      <a href="index.html">Hem</a>
+      <a href="forum.html">Forum</a>
+      <a href="grupper.html">Grupper</a>
+      <a href="tips.html">Tips & artiklar</a>
+    </nav>
+
+    <nav class="footer-column" aria-label="Hjälp">
+      <h3>Hjälp</h3>
+      <a href="tips.html">Vanliga frågor</a>
+      <a href="login.html">Logga in</a>
+      <a href="profil.html">Kontakt</a>
+      <a href="forum.html">Trygghet</a>
+      <a href="profil.html">Integritet</a>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 NPF</p>
+    <p>Nya Föräldrar Ska Träffas</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Huvudmeny">
+  <a href="index.html">Hem</a>
+  <a href="forum.html">Forum</a>
+  <a href="grupper.html">Grupper</a>
+  <a href="tips.html">Tips</a>
+  <a href="profil.html" class="active">Profil</a>
+</nav>
+
+</body>
+</html>

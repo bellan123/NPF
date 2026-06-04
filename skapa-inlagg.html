@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skapa inlägg - NPF</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="logo" aria-label="NPF startsida">
+    <img src="images/LoggaNPF.png" alt="NPF logotyp">
+  </a>
+
+  <nav class="desktop-nav" aria-label="Huvudmeny">
+    <a href="index.html">Hem</a>
+    <a href="forum.html" class="active">Forum</a>
+    <a href="grupper.html">Grupper</a>
+    <a href="tips.html">Tips</a>
+  </nav>
+
+  <form class="header-search" action="forum.html">
+    <label class="sr-only" for="site-search-create">Sök</label>
+    <input type="search" id="site-search-create" name="q" placeholder="Sök grupper, tips, forum...">
+  </form>
+
+  <details class="mobile-menu">
+    <summary aria-label="Öppna meny"><span></span><span></span><span></span></summary>
+    <nav aria-label="Mobilmeny">
+      <a href="index.html">Hem</a>
+      <a href="forum.html">Forum</a>
+      <a href="grupper.html">Grupper</a>
+      <a href="tips.html">Tips</a>
+      <a href="skapa-inlagg.html">Skapa inlägg</a>
+      <a href="profil.html">Profil</a>
+    </nav>
+  </details>
+
+  <nav class="nav-actions" aria-label="Snabbval">
+    <a href="skapa-inlagg.html" class="create-action active">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>
+      Skapa
+    </a>
+    <details class="mobile-search-popover">
+      <summary class="icon-action" aria-label="Sök">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="6.5"></circle>
+        <path d="m16 16 4.2 4.2"></path>
+      </svg>
+      </summary>
+      <form class="mobile-search-dialog" action="forum.html">
+        <label class="sr-only" for="quick-search">Sök</label>
+        <input type="search" id="quick-search" name="q" placeholder="Sök grupper, tips, forum...">
+        <button type="submit" class="button primary">Sök</button>
+      </form>
+    </details>
+    <a href="profil.html" class="avatar-action" aria-label="Profil">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21v-2a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v2"></path></svg>
+    </a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-heading">
+    <h1>Skapa inlägg</h1>
+    <p>Skriv en fråga, dela en tanke eller bjud in andra till en träff.</p>
+  </section>
+
+  <section class="form-shell">
+    <form class="post-form" action="forum.html">
+      <label for="post-title">Rubrik</label>
+      <input type="text" id="post-title" name="post-title" placeholder="Till exempel: Någon som vill promenera i veckan?">
+
+      <label for="post-category">Kategori</label>
+      <select id="post-category" name="post-category">
+        <option>Vardag</option>
+        <option>Sömn</option>
+        <option>Mat</option>
+        <option>Grupper</option>
+        <option>Tips</option>
+      </select>
+
+      <label for="post-group">Publicera i</label>
+      <select id="post-group" name="post-group">
+        <option>Alla forum</option>
+        <option>Promenadgänget</option>
+        <option>Föräldrafika</option>
+        <option>Ny i stan</option>
+        <option>Första barnet 2026</option>
+      </select>
+
+      <fieldset class="visibility-options">
+        <legend>Synlighet</legend>
+        <label>
+          <input type="radio" name="visibility" value="public" checked>
+          <span>
+            <strong>Offentligt inlägg</strong>
+            Alla på NPF kan se inlägget, oavsett stad eller grupp.
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="visibility" value="group">
+          <span>
+            <strong>Endast vald grupp</strong>
+            Bara medlemmar i gruppen kan läsa och svara.
+          </span>
+        </label>
+      </fieldset>
+
+      <label for="post-text">Inlägg</label>
+      <textarea id="post-text" name="post-text" rows="8" placeholder="Skriv lite om vad du undrar, behöver eller vill bjuda in till..."></textarea>
+
+      <div class="form-actions">
+        <a href="forum.html" class="button secondary">Avbryt</a>
+        <button type="submit" class="button primary">Publicera</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <img src="images/LoggaNPF.png" alt="NPF logotyp">
+      <h2>NPF</h2>
+      <p>En trygg mötesplats för blivande och nyblivna föräldrar.</p>
+    </div>
+
+    <nav class="footer-column" aria-label="Utforska">
+      <h3>Utforska</h3>
+      <a href="index.html">Hem</a>
+      <a href="forum.html">Forum</a>
+      <a href="grupper.html">Grupper</a>
+      <a href="tips.html">Tips & artiklar</a>
+    </nav>
+
+    <nav class="footer-column" aria-label="Hjälp">
+      <h3>Hjälp</h3>
+      <a href="tips.html">Vanliga frågor</a>
+      <a href="login.html">Logga in</a>
+      <a href="profil.html">Kontakt</a>
+      <a href="forum.html">Trygghet</a>
+      <a href="profil.html">Integritet</a>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 NPF</p>
+    <p>Nya Föräldrar Ska Träffas</p>
+  </div>
+</footer>
+
+<nav class="bottom-nav" aria-label="Huvudmeny">
+  <a href="index.html">Hem</a>
+  <a href="forum.html" class="active">Forum</a>
+  <a href="grupper.html">Grupper</a>
+  <a href="tips.html">Tips</a>
+  <a href="profil.html">Profil</a>
+</nav>
+
+</body>
+</html>

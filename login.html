@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logga in - NPF</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="auth-page">
+  <section class="auth-card">
+    <a href="index.html" class="logo auth-logo" aria-label="NPF startsida">
+      <img src="images/LoggaNPF.png" alt="NPF logotyp">
+    </a>
+    <span class="eyebrow">Välkommen tillbaka</span>
+    <h1>Logga in</h1>
+    <p>Fortsätt till dina grupper, sparade tips och forumtrådar.</p>
+
+    <form class="post-form" action="profil.html">
+      <label for="email">E-post</label>
+      <input type="email" id="email" name="email" placeholder="namn@example.com">
+
+      <label for="password">Lösenord</label>
+      <input type="password" id="password" name="password" placeholder="Ditt lösenord">
+
+      <button type="submit" class="button primary">Logga in</button>
+    </form>
+
+    <p class="auth-note">Ny på NPF? <a href="profil.html">Skapa en profil</a></p>
+  </section>
+</main>
+
+</body>
+</html>
