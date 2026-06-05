@@ -480,6 +480,14 @@ main {
   text-underline-offset: 4px;
 }
 
+.image-credit {
+  margin: -8px 0 34px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: right;
+}
+
 .intro-strip {
   display: grid;
   grid-template-columns: 1fr;
@@ -1950,6 +1958,7 @@ main {
 
   .home-page .intro-strip,
   .home-page .home-section,
+  .home-page .image-credit,
   .home-page .daily-tip {
     width: min(100% - 64px, 1180px);
     margin-left: auto;
